@@ -1,0 +1,9 @@
+services:
+  redis-server:
+    image: redis
+
+  python-app:
+    build:
+      context: .
+    ports:
+      - "4001:8081"
